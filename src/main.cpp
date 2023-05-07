@@ -117,3 +117,431 @@ void menu(GLint option)
         }
         glutPostRedisplay();
     }
+
+void insert()
+    {
+        if(x==-1 && y==-1 || x==0 && y==0 || x==1 && y==1 || x==2 && y==2 || x==3 && y==3 || x==4 && y==4)
+        {
+            char str1[]="Queue is Empty";
+            glColor3f(1.0,0.0,1.0);
+            glRasterPos3f(1.0,-1.7,0.2);
+            for(i=0;str1[i]!='\0';i++)
+            {
+                glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24,str1[i]);
+            }
+            glutSwapBuffers();
+        }
+    else
+        if(x==0 && y==-1)
+        {
+            glColor3f(1.0,1.0,1.0);
+            glRasterPos3f(-2.8,-0.85,0.2);
+            glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24,'1');
+            
+            red=1.0;blue=0.0;green=0.0;
+            glPushMatrix();
+            glTranslatef(-2.8f, 0.0, -5.0);
+            cube();
+            glPopMatrix();
+            glutSwapBuffers();
+        }
+    else
+        if(x==1 && y==-1)
+        {
+            glColor3f(1.0,1.0,1.0);
+            glRasterPos3f(-2.8,-0.85,0.2);
+            glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24,'1');
+            glColor3f(1.0,1.0,1.0);
+            glRasterPos3f(-1.7,-0.85,0.2);
+            glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24,'2');
+            
+            red=1.0;blue=0.0;green=0.0;
+            glPushMatrix();
+            glTranslatef(-2.8f, 0.0, -5.0);
+            cube();
+            glPopMatrix();
+            glutSwapBuffers();
+            
+            red=0.0;blue=0.0;green=1.0;
+            glPushMatrix();
+            glTranslatef(-1.7f, 0.0f, -5.0f);  
+            cube();
+            glPopMatrix();
+            glutSwapBuffers();
+        }
+    else
+        if(x==2 && y==-1)
+        {
+            glColor3f(1.0,1.0,1.0);
+            glRasterPos3f(-2.8,-0.85,0.2);
+            glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24,'1');
+            glColor3f(1.0,1.0,1.0);
+            glRasterPos3f(-1.7,-0.85,0.2);
+            glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24,'2');
+            glColor3f(1.0,1.0,1.0);
+            glRasterPos3f(-0.6,-0.85,0.2);
+            glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24,'3');
+            
+            red=1.0;blue=0.0;green=0.0;
+            glPushMatrix();
+            glTranslatef(-2.8f, 0.0, -5.0);
+            cube();
+            glPopMatrix();
+            glutSwapBuffers();
+            
+            red=0.0;blue=0.0;green=1.0;
+            glPushMatrix();
+            glTranslatef(-1.7f, 0.0f, -5.0f);  
+            cube();
+            glPopMatrix();
+            glutSwapBuffers();
+            
+            red=0.0;blue=1.0;green=0.0;
+            glPushMatrix();
+            glTranslatef(-0.6f, 0.0f, -5.0f);
+            cube();
+            glPopMatrix();
+            glutSwapBuffers();
+        }
+    else
+        if(x==3 && y==-1)
+        {
+            glColor3f(1.0,1.0,1.0);
+            glRasterPos3f(-2.8,-0.85,0.2);
+            glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24,'1');
+            glColor3f(1.0,1.0,1.0);
+            glRasterPos3f(-1.7,-0.85,0.2);
+            glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24,'2');
+            glColor3f(1.0,1.0,1.0);
+            glRasterPos3f(-0.6,-0.85,0.2);
+            glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24,'3');
+            glColor3f(1.0,1.0,1.0);
+            glRasterPos3f(0.5,-0.85,0.2);
+            glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24,'4');
+            
+            red=1.0;blue=0.0;green=0.0;
+            glPushMatrix();
+            glTranslatef(-2.8f, 0.0, -5.0);
+            cube();
+            glPopMatrix();
+            glutSwapBuffers();
+            
+            red=0.0;blue=0.0;green=1.0;
+            glPushMatrix();
+            glTranslatef(-1.7f, 0.0f, -5.0f);  
+            cube();
+            glPopMatrix();
+            glutSwapBuffers();
+            
+            red=0.0;blue=1.0;green=0.0;
+            glPushMatrix();
+            glTranslatef(-0.6f, 0.0f, -5.0f);
+            cube();
+            glPopMatrix();
+            glutSwapBuffers();
+            
+            red=1.0;blue=1.0;green=0.0;
+            glPushMatrix();
+            glTranslatef(0.5f, 0.0f, -5.0f);
+            cube();
+            glPopMatrix();
+            glutSwapBuffers();
+        }
+    else
+        if(x==4 && y==-1)
+        {
+            glColor3f(1.0,1.0,1.0);
+            glRasterPos3f(-2.8,-0.85,0.2);
+            glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24,'1');
+            glColor3f(1.0,1.0,1.0);
+            glRasterPos3f(-1.7,-0.85,0.2);
+            glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24,'2');
+            glColor3f(1.0,1.0,1.0);
+            glRasterPos3f(-0.6,-0.85,0.2);
+            glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24,'3');
+            glColor3f(1.0,1.0,1.0);
+            glRasterPos3f(0.5,-0.85,0.2);
+            glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24,'4');
+            glColor3f(1.0,1.0,1.0);
+            glRasterPos3f(1.6,-0.85,0.2);
+            glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24,'5');
+            
+            red=1.0;blue=0.0;green=0.0;
+            glPushMatrix();
+            glTranslatef(-2.8f, 0.0, -5.0);
+            cube();
+            glPopMatrix();
+            glutSwapBuffers();
+            
+            red=0.0;blue=0.0;green=1.0;
+            glPushMatrix();
+            glTranslatef(-1.7f, 0.0f, -5.0f);  
+            cube();
+            glPopMatrix();
+            glutSwapBuffers();
+            
+            red=0.0;blue=1.0;green=0.0;
+            glPushMatrix();
+            glTranslatef(-0.6f, 0.0f, -5.0f);
+            cube();
+            glPopMatrix();
+            glutSwapBuffers();
+            
+            red=1.0;blue=1.0;green=0.0;
+            glPushMatrix();
+            glTranslatef(0.5f, 0.0f, -5.0f);
+            cube();
+            glPopMatrix();
+            glutSwapBuffers();
+            
+            red=0.2;blue=0.6;green=0.5;
+            glPushMatrix();
+            glTranslatef(1.6f, 0.0f, -5.0f);
+            cube();
+            glPopMatrix();
+            glutSwapBuffers();
+        }
+    else
+        if(x==4 && y==0)
+        {
+            glColor3f(1.0,1.0,1.0);
+            glRasterPos3f(-1.7,-0.85,0.2);
+            glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24,'2');
+            glColor3f(1.0,1.0,1.0);
+            glRasterPos3f(-0.6,-0.85,0.2);
+            glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24,'3');
+            glColor3f(1.0,1.0,1.0);
+            glRasterPos3f(0.5,-0.85,0.2);
+            glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24,'4');
+            glColor3f(1.0,1.0,1.0);
+            glRasterPos3f(1.6,-0.85,0.2);
+            glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24,'5');
+            
+            red=0.0;blue=0.0;green=1.0;
+            glPushMatrix();
+            glTranslatef(-1.7f, 0.0f, -5.0f);  
+            cube();
+            glPopMatrix();
+            glutSwapBuffers();
+            
+            red=0.0;blue=1.0;green=0.0;
+            glPushMatrix();
+            glTranslatef(-0.6f, 0.0f, -5.0f);
+            cube();
+            glPopMatrix();
+            glutSwapBuffers();
+            
+            red=1.0;blue=1.0;green=0.0;
+            glPushMatrix();
+            glTranslatef(0.5f, 0.0f, -5.0f);
+            cube();
+            glPopMatrix();
+            glutSwapBuffers();
+            
+            red=0.2;blue=0.6;green=0.5;
+            glPushMatrix();
+            glTranslatef(1.6f, 0.0f, -5.0f);
+            cube();
+            glPopMatrix();
+            glutSwapBuffers();
+        }
+    else
+        if(x==4 && y==1)
+        {
+            glColor3f(1.0,1.0,1.0);
+            glRasterPos3f(-0.6,-0.85,0.2);
+            glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24,'3');
+            glColor3f(1.0,1.0,1.0);
+            glRasterPos3f(0.5,-0.85,0.2);
+            glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24,'4');
+            glColor3f(1.0,1.0,1.0);
+            glRasterPos3f(1.6,-0.85,0.2);
+            glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24,'5');
+            
+            red=0.0;blue=1.0;green=0.0;
+            glPushMatrix();
+            glTranslatef(-0.6f, 0.0f, -5.0f);
+            cube();
+            glPopMatrix();
+            glutSwapBuffers();
+            
+            red=1.0;blue=1.0;green=0.0;
+            glPushMatrix();
+            glTranslatef(0.5f, 0.0f, -5.0f);
+            cube();
+            glPopMatrix();
+            glutSwapBuffers();
+            
+            red=0.2;blue=0.6;green=0.5;
+            glPushMatrix();
+            glTranslatef(1.6f, 0.0f, -5.0f);
+            cube();
+            glPopMatrix();
+            glutSwapBuffers();
+        }
+    else
+        if(x==4 && y==2)
+        {
+            glColor3f(1.0,1.0,1.0);
+            glRasterPos3f(0.5,-0.85,0.2);
+            glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24,'4');
+            glColor3f(1.0,1.0,1.0);
+            glRasterPos3f(1.6,-0.85,0.2);
+            glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24,'5');
+            
+            red=1.0;blue=1.0;green=0.0;
+            glPushMatrix();
+            glTranslatef(0.5f, 0.0f, -5.0f);
+            cube();
+            glPopMatrix();
+            glutSwapBuffers();
+            
+            red=0.2;blue=0.6;green=0.5;
+            glPushMatrix();
+            glTranslatef(1.6f, 0.0f, -5.0f);
+            cube();
+            glPopMatrix();
+            glutSwapBuffers();
+        }
+    else
+        if(x==4 && y==3)
+        {
+            glColor3f(1.0,1.0,1.0);
+            glRasterPos3f(1.6,-0.85,0.2);
+            glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24,'5');
+            
+            red=0.2;blue=0.6;green=0.5;
+            glPushMatrix();
+            glTranslatef(1.6f, 0.0f, -5.0f);
+            cube();
+            glPopMatrix();
+            glutSwapBuffers();
+        }
+    else
+        if(x==3 && y==0)
+        {
+            glColor3f(1.0,1.0,1.0);
+            glRasterPos3f(-1.7,-0.85,0.2);
+            glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24,'2');
+            glColor3f(1.0,1.0,1.0);
+            glRasterPos3f(-0.6,-0.85,0.2);
+            glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24,'3');
+            glColor3f(1.0,1.0,1.0);
+            glRasterPos3f(0.5,-0.85,0.2);
+            glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24,'4');
+            
+            red=0.0;blue=0.0;green=1.0;
+            glPushMatrix();
+            glTranslatef(-1.7f, 0.0f, -5.0f);  
+            cube();
+            glPopMatrix();
+            glutSwapBuffers();
+            
+            red=0.0;blue=1.0;green=0.0;
+            glPushMatrix();
+            glTranslatef(-0.6f, 0.0f, -5.0f);
+            cube();
+            glPopMatrix();
+            glutSwapBuffers();
+            
+            red=1.0;blue=1.0;green=0.0;
+            glPushMatrix();
+            glTranslatef(0.5f, 0.0f, -5.0f);
+            cube();
+            glPopMatrix();
+            glutSwapBuffers();
+        }
+    else
+        if(x==3 && y==1)
+        {
+            glColor3f(1.0,1.0,1.0);
+            glRasterPos3f(-0.6,-0.85,0.2);
+            glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24,'3');
+            glColor3f(1.0,1.0,1.0);
+            glRasterPos3f(0.5,-0.85,0.2);
+            glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24,'4');
+            
+            red=0.0;blue=1.0;green=0.0;
+            glPushMatrix();
+            glTranslatef(-0.6f, 0.0f, -5.0f);
+            cube();
+            glPopMatrix();
+            glutSwapBuffers();
+            
+            red=1.0;blue=1.0;green=0.0;
+            glPushMatrix();
+            glTranslatef(0.5f, 0.0f, -5.0f);
+            cube();
+            glPopMatrix();
+            glutSwapBuffers();
+        }
+    else
+        if(x==3 && y==2)
+        {
+            glColor3f(1.0,1.0,1.0);
+            glRasterPos3f(0.5,-0.85,0.2);
+            glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24,'4');
+            
+            red=1.0;blue=1.0;green=0.0;
+            glPushMatrix();
+            glTranslatef(0.5f, 0.0f, -5.0f);
+            cube();
+            glPopMatrix();
+            glutSwapBuffers();
+        }
+    else
+        if(x==2 && y==0)
+        {
+            glColor3f(1.0,1.0,1.0);
+            glRasterPos3f(-1.7,-0.85,0.2);
+            glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24,'2');
+            glColor3f(1.0,1.0,1.0);
+            glRasterPos3f(-0.6,-0.85,0.2);
+            glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24,'3');
+            glColor3f(1.0,1.0,1.0);
+            glRasterPos3f(0.5,-0.85,0.2);
+            
+            red=0.0;blue=0.0;green=1.0;
+            glPushMatrix();
+            glTranslatef(-1.7f, 0.0f, -5.0f);  
+            cube();
+            glPopMatrix();
+            glutSwapBuffers();
+            
+            red=0.0;blue=1.0;green=0.0;
+            glPushMatrix();
+            glTranslatef(-0.6f, 0.0f, -5.0f);
+            cube();
+            glPopMatrix();
+            glutSwapBuffers();
+        }
+    else
+        if(x==2 && y==1)
+        {
+            glRasterPos3f(-0.6,-0.85,0.2);
+            glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24,'3');
+            glColor3f(1.0,1.0,1.0);
+            glRasterPos3f(0.5,-0.85,0.2);
+            
+            red=0.0;blue=1.0;green=0.0;
+            glPushMatrix();
+            glTranslatef(-0.6f, 0.0f, -5.0f);
+            cube();
+            glPopMatrix();
+            glutSwapBuffers();
+        }
+    else
+        if(x==1 && y==0)
+        {
+            glColor3f(1.0,1.0,1.0);
+            glRasterPos3f(-1.7,-0.85,0.2);
+            glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24,'2');
+            
+            red=0.0;blue=0.0;green=1.0;
+            glPushMatrix();
+            glTranslatef(-1.7f, 0.0f, -5.0f);  
+            cube();
+            glPopMatrix();
+            glutSwapBuffers();
+        }
+    }
