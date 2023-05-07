@@ -11,7 +11,7 @@ GLfloat angle=-20.0,xaxis=1.0,yaxis=1.0,zaxis=0.0;
 char title[] = "3D Queue Representation";
 
 void cube()                      //function to create the cube 
-    {
+{
         glScaled(0.5,0.5,0.5);     //Size of the cube
         glRotated(angle,xaxis,yaxis,zaxis); //rotation angle
         glBegin(GL_QUADS);       //type of the cube
@@ -68,7 +68,7 @@ void init()    //intialize the 2d Scene
         glLoadIdentity();                 //This resets the projection matrix to its default state
         gluOrtho2D(0.0,400.0,0.0,400.0);  //Sets viewing volume of the 2d space
         glMatrixMode(GL_MODELVIEW);
-    }
+}
 
 void initGL()   //intialize the 3d Scene
     {
