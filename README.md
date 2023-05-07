@@ -1,2 +1,3 @@
 # CGV-mini-project
-Mini project on visualisation of linear queue
+
+OpenGl Mini Project using C++ Glut library to create a Visual Representation of Linear Queue
