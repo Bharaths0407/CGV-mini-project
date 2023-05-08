@@ -2,6 +2,7 @@
 #include<GL/glut.h>        //Libraries decalration
 
 void insert();
+void del();
 void delet();
 void myReshape(int w,int h);   //function defination
 
@@ -302,6 +303,22 @@ void insert()
             glPopMatrix();
             glutSwapBuffers();
         }
+    
+    }
+
+void del()
+    {
+        if(x==-1 && y==-1 || x==0 && y==0 || x==1 && y==1 || x==2 && y==2 || x==3 && y==3 || x==4 && y==4)
+        {
+            char str1[]="Queue is Empty";
+            glColor3f(1.0,0.0,1.0);
+            glRasterPos3f(1.0,-1.7,0.2);
+            for(i=0;str1[i]!='\0';i++)
+            {
+                glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24,str1[i]);
+            }
+            glutSwapBuffers();
+        }
     else
         if(x==4 && y==0)
         {
@@ -569,7 +586,7 @@ void delet()
                 glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24,e1[i]);
             }
         }
-        insert();
+        del();
     }
 
 void key(unsigned char key,int a,int b)
