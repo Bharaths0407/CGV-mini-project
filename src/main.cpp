@@ -58,8 +58,9 @@ void cube()                      //function to create the cube
         glVertex3f(  1.0f,  1.0f, -1.0f);
         glVertex3f(  1.0f, -1.0f, -1.0f);
         glVertex3f(  1.0f, -1.0f,  1.0f);
-    
+        
         glEnd();
+        
     }
 
 void init()    //intialize the 2d Scene
