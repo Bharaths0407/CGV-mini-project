@@ -746,23 +746,23 @@ void display(void)
         }
         glPopMatrix();
     
-        glPushMatrix();
-        char str2[]="Aditya S Kanachi";
+        // glPushMatrix();
+        //char str2[]="Aditya S Kanachi";
         char str3[]="Alfazal";
         char str4[]="Bharath S";
         char str5[]="Rohith Badrinath";
-        char str6[]="USN:1VA20CS003";
+        //char str6[]="USN:1VA20CS003";
         char str7[]="USN:1VA20CS007";
         char str8[]="USN:1VA20CS019";
         char str9[]="USN:1VA20CS042";
-        glColor3f(1.0,0.06,0.576);
-        glTranslatef(120.0,260.0,0.0);
-        glScaled(0.04,0.1,0.0);
-        for(i=0;str2[i]!='\0';i++)
-        {
-            glutStrokeCharacter(GLUT_STROKE_MONO_ROMAN,str2[i]);
-        }
-        glPopMatrix();
+        // glColor3f(1.0,0.06,0.576);
+        // glTranslatef(120.0,260.0,0.0);
+        // glScaled(0.04,0.1,0.0);
+        // for(i=0;str2[i]!='\0';i++)
+        // {
+        //     glutStrokeCharacter(GLUT_STROKE_MONO_ROMAN,str2[i]);
+        // }
+        // glPopMatrix();
     
         glPushMatrix();
         glColor3f(1.0,0.06,0.576);
@@ -794,15 +794,15 @@ void display(void)
         }
         glPopMatrix();
     
-        glPushMatrix();
-        glColor3f(0.0,0.5,1.0);
-        glTranslatef(210.0,260.0,0.0);
-        glScaled(0.04,0.1,0.0);
-        for(i=0;str6[i]!='\0';i++)
-        {
-            glutStrokeCharacter(GLUT_STROKE_MONO_ROMAN,str6[i]);
-        }
-        glPopMatrix();
+        // glPushMatrix();
+        // glColor3f(0.0,0.5,1.0);
+        // glTranslatef(210.0,260.0,0.0);
+        // glScaled(0.04,0.1,0.0);
+        // for(i=0;str6[i]!='\0';i++)
+        // {
+        //     glutStrokeCharacter(GLUT_STROKE_MONO_ROMAN,str6[i]);
+        // }
+        // glPopMatrix();
     
         glPushMatrix();
         glColor3f(0.0,0.5,1.0);
